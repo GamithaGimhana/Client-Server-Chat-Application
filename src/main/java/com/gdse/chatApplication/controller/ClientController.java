@@ -106,6 +106,17 @@ public class ClientController implements Initializable {
         dataOutputStream.flush();
     }
 
+    @FXML
+    void btnEmojiOnClick(ActionEvent event) throws IOException {
+        String selectedEmoji = "🙂";
+
+        txtChat.appendText("User's Message: " + selectedEmoji + "\n");
+
+        dataOutputStream = new DataOutputStream(socket.getOutputStream());
+        dataOutputStream.writeUTF(selectedEmoji);
+        dataOutputStream.flush();
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 //        txtChat.setEditable(false);
@@ -151,7 +162,7 @@ public class ClientController implements Initializable {
                     } else {
                         // Treat as normal text message
                         String message = header;
-                        Platform.runLater(() -> txtChat.appendText("User's Message -> " + message + "\n"));
+                        Platform.runLater(() -> txtChat.appendText("Server's Message -> " + message + "\n"));
                     }
                 }
 

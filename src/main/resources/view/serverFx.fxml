@@ -13,7 +13,7 @@
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
          <children>
             <TextArea fx:id="txtChat" layoutX="36.0" layoutY="79.0" prefHeight="240.0" prefWidth="345.0" />
-            <TextField fx:id="txtInput" layoutX="36.0" layoutY="338.0" prefHeight="25.0" prefWidth="320.0" promptText="Enter Your message" />
+            <TextField fx:id="txtInput" layoutX="71.0" layoutY="338.0" prefHeight="25.0" prefWidth="285.0" promptText="Enter Your message" />
             <Button fx:id="btnSend" layoutX="475.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnSendOnClick" prefHeight="25.0" prefWidth="92.0" text="Send" />
             <Label layoutX="249.0" layoutY="26.0" prefHeight="53.0" prefWidth="108.0" text="Server">
                <font>
@@ -22,6 +22,7 @@
             </Label>
             <Button fx:id="btnUpload" layoutX="370.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnUploadOnClick" prefHeight="25.0" prefWidth="92.0" text="Upload" />
             <ImageView fx:id="imgView" fitHeight="240.0" fitWidth="180.0" layoutX="386.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="btnEmoji" layoutX="36.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnEmojiOnClick" text="😎" />
          </children>
       </AnchorPane>
    </children>

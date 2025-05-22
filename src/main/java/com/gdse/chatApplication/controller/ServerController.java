@@ -100,9 +100,20 @@ public class ServerController implements Initializable {
     @FXML
     void btnSendOnClick(ActionEvent event) throws IOException {
         sMessage = txtInput.getText();
-//        txtChat.appendText("Server's Messege : " + sMessage + "\n");
+        txtChat.appendText("Server's Messege : " + sMessage + "\n");
         dataOutputStream = new DataOutputStream(socket.getOutputStream());
         dataOutputStream.writeUTF(sMessage);
+        dataOutputStream.flush();
+    }
+
+    @FXML
+    void btnEmojiOnClick(ActionEvent event) throws IOException {
+        String selectedEmoji = "🙂";
+
+        txtChat.appendText("Server's Message: " + selectedEmoji + "\n");
+
+        dataOutputStream = new DataOutputStream(socket.getOutputStream());
+        dataOutputStream.writeUTF(selectedEmoji);
         dataOutputStream.flush();
     }
 

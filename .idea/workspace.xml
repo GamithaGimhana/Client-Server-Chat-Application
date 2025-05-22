@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e5e12e0-a068-407d-85cf-40b3b0742bcd" name="Changes" comment="remove received files through testing">
+    <list default="true" id="6e5e12e0-a068-407d-85cf-40b3b0742bcd" name="Changes" comment="add files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gdse/chatApplication/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gdse/chatApplication/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gdse/chatApplication/controller/ServerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gdse/chatApplication/controller/ServerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/clientFx.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/clientFx.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/serverFx.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/serverFx.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gdse/chatApplication/controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gdse/chatApplication/controller/ClientController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gdse/chatApplication/controller/ServerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gdse/chatApplication/controller/ServerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/clientFx.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/clientFx.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/serverFx.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/serverFx.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,32 +52,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AppInitializer.executor": "Run",
-    "Application.ClientInitializer.executor": "Run",
-    "Application.ServerInitializer.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/gamit/OneDrive/Documents/MyWork/INP/Chat-Application/src/main/java/com/gdse/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AppInitializer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ClientInitializer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ServerInitializer.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/gamit/OneDrive/Documents/MyWork/INP/Chat-Application/src/main/java/com/gdse/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
       </set>
     </attachedChunks>
   </component>
@@ -85,6 +95,11 @@
       <workItem from="1744255192623" duration="6000" />
       <workItem from="1745049079610" duration="1661000" />
       <workItem from="1745050762624" duration="747000" />
+      <workItem from="1745051691716" duration="47000" />
+      <workItem from="1747199214976" duration="2159000" />
+      <workItem from="1747277849528" duration="323000" />
+      <workItem from="1747826091609" duration="1276000" />
+      <workItem from="1747869792935" duration="2932000" />
     </task>
     <task id="LOCAL-00001" summary="remove received files through testing">
       <option name="closed" value="true" />
@@ -94,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745049944245</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add files">
+      <option name="closed" value="true" />
+      <created>1745051724845</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745051724845</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +125,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="remove received files through testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove received files through testing" />
+    <MESSAGE value="add files" />
+    <option name="LAST_COMMIT_MESSAGE" value="add files" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
