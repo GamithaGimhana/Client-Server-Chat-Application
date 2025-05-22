@@ -7,6 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -38,27 +39,6 @@ public class ClientController implements Initializable {
     DataOutputStream dataOutputStream;
     DataInputStream dataInputStream;
 
-//    @FXML
-//    void btnUploadOnClick(ActionEvent event) {
-//        FileChooser fileChooser = new FileChooser();
-//        File file = fileChooser.showOpenDialog(new Stage());
-//        if (file != null) {
-//            new Thread(() -> {
-//                try {
-//                    FileInputStream fileInputStream = new FileInputStream(file);
-//
-//                    dataOutputStream = new DataOutputStream(socket.getOutputStream());
-//                    dataOutputStream.flush();
-//
-//                } catch (FileNotFoundException e) {
-//                    throw new RuntimeException(e);
-//                } catch (IOException e) {
-//                    throw new RuntimeException(e);
-//                }
-//            }).start();
-//        }
-//    }
-
     @FXML
     void btnUploadOnClick(ActionEvent event) {
         FileChooser fileChooser = new FileChooser();
@@ -74,7 +54,9 @@ public class ClientController implements Initializable {
                     dataOutputStream = new DataOutputStream(socket.getOutputStream());
 
                     // Send marker to indicate image sending
-                    dataOutputStream.writeUTF("IMAGE");
+//                    dataOutputStream.writeUTF("IMAGE");
+                    // Send marker to indicate file sending
+                    dataOutputStream.writeUTF("FILE");
                     dataOutputStream.writeUTF(file.getName());
                     dataOutputStream.writeLong(file.length());
 
@@ -87,7 +69,8 @@ public class ClientController implements Initializable {
                     dataOutputStream.flush();
                     fileInputStream.close();
 
-                    System.out.println("Image sent successfully!");
+//                    System.out.println("Image sent successfully!");
+                    System.out.println("File sent successfully!");
 
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -134,7 +117,8 @@ public class ClientController implements Initializable {
                 while (true) {
                     String header = dataInputStream.readUTF();
 
-                    if (header.equals("IMAGE")) {
+//                    if (header.equals("IMAGE")) {
+                    if (header.equals("FILE")) {
                         // Read image name and size
                         String fileName = dataInputStream.readUTF();
                         long fileSize = dataInputStream.readLong();
@@ -155,8 +139,21 @@ public class ClientController implements Initializable {
                         fileOutputStream.close();
 
                         Platform.runLater(() -> {
-                            imgView.setImage(new javafx.scene.image.Image(receivedFile.toURI().toString()));
-                            txtChat.appendText("📷 Image received: " + fileName + "\n");
+                            Platform.runLater(() -> {
+                                if (fileName.endsWith(".png") || fileName.endsWith(".jpg") ||
+                                        fileName.endsWith(".jpeg") || fileName.endsWith(".gif") ||
+                                        fileName.endsWith(".bmp")) {
+
+                                    // Show in image view
+                                    imgView.setImage(new Image(receivedFile.toURI().toString()));
+                                    txtChat.appendText("📷 Image received: " + fileName + "\n");
+
+                                } else {
+                                    // Show as regular file
+                                    txtChat.appendText("📁 File received: " + fileName + "\n");
+                                }
+                            });
+
                         });
 
                     } else {

@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e5e12e0-a068-407d-85cf-40b3b0742bcd" name="Changes" comment="add files">
+    <list default="true" id="6e5e12e0-a068-407d-85cf-40b3b0742bcd" name="Changes" comment="add emoji sending">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gdse/chatApplication/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gdse/chatApplication/controller/ClientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gdse/chatApplication/controller/ServerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gdse/chatApplication/controller/ServerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/clientFx.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/clientFx.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/serverFx.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/serverFx.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gdse/chatApplication/controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gdse/chatApplication/controller/ClientController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gdse/chatApplication/controller/ServerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gdse/chatApplication/controller/ServerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/clientFx.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/clientFx.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/serverFx.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/serverFx.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +71,26 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="ClientInitializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gdse.chatApplication.ClientInitializer" />
+      <module name="Chat-Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gdse.chatApplication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ClientInitializer" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -99,7 +115,8 @@
       <workItem from="1747199214976" duration="2159000" />
       <workItem from="1747277849528" duration="323000" />
       <workItem from="1747826091609" duration="1276000" />
-      <workItem from="1747869792935" duration="2932000" />
+      <workItem from="1747869792935" duration="3952000" />
+      <workItem from="1747882067491" duration="1412000" />
     </task>
     <task id="LOCAL-00001" summary="remove received files through testing">
       <option name="closed" value="true" />
@@ -117,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745051724845</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add emoji sending">
+      <option name="closed" value="true" />
+      <created>1747873048319</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747873048319</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,7 +151,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="remove received files through testing" />
     <MESSAGE value="add files" />
-    <option name="LAST_COMMIT_MESSAGE" value="add files" />
+    <MESSAGE value="add emoji sending" />
+    <option name="LAST_COMMIT_MESSAGE" value="add emoji sending" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
